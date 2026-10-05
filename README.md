@@ -78,5 +78,3 @@ metapli-evaluate outputs/predictions.csv --metadata data/metadata.csv \
   --split test --per-target-output outputs/metrics.csv \
   --summary-output outputs/summary.json
 ```
-
-Third-party licenses: [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).

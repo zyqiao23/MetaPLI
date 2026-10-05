@@ -1,0 +1,22 @@
+metadata_csv: ../data/metadata.csv
+graph_lmdb: ../data/graphs.lmdb
+similarity_csv: ../data/similarities.csv
+output_dir: ../outputs/train
+init_checkpoint: null
+device: cpu
+seed: 23
+context:
+  k: 4
+  policy: FPSimTopK
+  seed: 0
+model:
+  readout_scope: lig
+training:
+  epochs: 3
+  rank_size: 8
+  learning_rate: 0.0001
+  warmup_steps: 10000
+  decay: 0.99
+  nll_weight: 0.5
+  listmle_weight: 0.5
+  gradient_clip_val: 3.0

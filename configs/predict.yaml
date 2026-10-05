@@ -1,0 +1,12 @@
+checkpoint: ../data/model.ckpt
+metadata_csv: ../data/metadata.csv
+graph_lmdb: ../data/graphs.lmdb
+similarity_csv: ../data/similarities.csv
+output_csv: ../outputs/predictions.csv
+split: test
+device: cpu
+seed: 23
+context:
+  k: 4
+  policy: FPSimTopK
+  seed: 0
